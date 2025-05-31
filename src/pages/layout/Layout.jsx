@@ -1,18 +1,23 @@
-import React from 'react'
-import Navbar from '../../components/navbar/Navbar'
-import { Outlet } from 'react-router-dom'
-import Footer from '../../components/footer/Footer'
+import React from "react";
+import Navbar from "../../components/navbar/Navbar";
+import { Outlet } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
+import "./Layout.scss"
 
 const Layout = () => {
   return (
-    <>
-      <Navbar/>
+    <div className="layoutContainer">
+      <nav>
+        <Navbar />
+      </nav>
       <main>
-        <Outlet/>
+        <Outlet />
       </main>
-      <Footer/>
-    </>
-  )
-}
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

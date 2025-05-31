@@ -6,17 +6,18 @@ import {
   FaSquareXTwitter,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import "./Footer.scss"
 
 const Footer = () => {
   return (
-    <footer >
+    <div  id="footerDiv" className="horizontal">
       <div className="icons">
         <a
           target="blank"
           href="https://x.com/i/flow/login"
           className="socialIcon"
         >
-          <i>
+          <i className="icon">
             <FaSquareXTwitter />
           </i>
         </a>
@@ -25,7 +26,7 @@ const Footer = () => {
           href="https://www.facebook.com/?locale=tr_TR"
           className="socialIcon"
         >
-          <i>
+          <i className="icon">
             <FaSquareFacebook />
           </i>
         </a>
@@ -34,7 +35,7 @@ const Footer = () => {
           href="https://www.instagram.com/"
           className="socialIcon"
         >
-          <i>
+          <i className="icon">
             <FaSquareInstagram />
           </i>
         </a>
@@ -43,7 +44,7 @@ const Footer = () => {
           href="https://github.com/Hasan-E"
           className="socialIcon"
         >
-          <i>
+          <i className="icon">
             <FaGithubSquare />
           </i>
         </a>
@@ -51,7 +52,7 @@ const Footer = () => {
       <div className="copyRight">
         <p>© Copyright ROOSTER 2025</p>
       </div>
-    </footer>
+    </div>
   );
 };
 
