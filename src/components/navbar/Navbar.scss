@@ -13,14 +13,13 @@
   font-weight: 500;
   font-size: 1.3rem;
   text-decoration: none;
-  color: wheat;
-  background-color: rgba(255, 68, 0, 0.253);
+  color: white;
   padding: 0.3rem;
   border-radius: 10px;
 }
 .navLink:hover i {
   color: orangered;
-  transition: 2s all;
+  transition: 1s all;
 }
 .linkActive {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -32,5 +31,5 @@
 }
 .linkActive:hover i {
   color: wheat;
-  transition: 2s all;
+  transition: 1s all;
 }

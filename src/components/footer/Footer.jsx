@@ -5,12 +5,24 @@ import {
   FaSquareInstagram,
   FaSquareXTwitter,
 } from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import "./Footer.scss"
+import { Link, useLocation } from "react-router-dom";
+import "./Footer.scss";
 
 const Footer = () => {
+  const location = useLocation();
+  let footerClass = "";
+  if (location.pathname === "/") {
+    footerClass = "horizontal";
+  } else if (
+    location.pathname === "/about" ||
+    location.pathname === "/projects"
+  ) {
+    footerClass = "vertical";
+  } else {
+    footerClass = "middle";
+  }
   return (
-    <div  id="footerDiv" className="horizontal">
+    <div id="footerDiv" className={footerClass}>
       <div className="icons">
         <a
           target="blank"

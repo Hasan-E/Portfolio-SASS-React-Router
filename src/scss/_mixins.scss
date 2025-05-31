@@ -1,0 +1,35 @@
+@mixin footer(
+  $iconDisplay: flex,
+  $iconDirection: row,
+  $writeMode: horizontal-tb,
+  $footerDirection: row,
+  $footerAlign:space-between,
+  $mb:0,
+) {
+  display: flex;
+  flex-direction: $footerDirection; //4
+  justify-content: $footerAlign;//5
+  align-items: center; 
+  margin-bottom: $mb; //6
+  padding: 1rem;
+  .icons {
+    display: $iconDisplay; //1
+    flex-direction: $iconDirection; //2
+  }
+  .icon {
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 0.7rem;
+    &:hover {
+      color: orangered;
+      transition: 1s all;
+    }
+  }
+  .copyRight {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    writing-mode: $writeMode; //3
+  }
+}

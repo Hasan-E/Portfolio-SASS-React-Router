@@ -1,20 +1,10 @@
-.horizontal {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  padding: 1rem;
+@use "../../scss/mixins";
+.horizontal{
+  @include mixins.footer();
 }
-.icon {
-  color: wheat;
-  font-size: 2.5rem;
-  margin-right: 0.7rem;
-  &:hover {
-    color: orangered;
-    transition: 1s all;
-  }
+.vertical {
+  @include mixins.footer(flex, column, vertical-lr,space-between);
 }
-.copyRight{
-    color: wheat;
-    font-size: 0.8rem;
-    font-weight: 600;
+.middle{
+  @include mixins.footer($footerDirection:column,$footerAlign:center,$mb:6rem)
 }
