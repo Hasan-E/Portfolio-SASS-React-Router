@@ -1,32 +1,36 @@
-.navContainer{
-    display: flex;
-    justify-self:end;
+.navContainer {
+  display: flex;
+  justify-self: end;
 }
-.navContainer ul{
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin-right: 2rem;
+.navContainer ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-right: 2rem;
 }
-.navLink{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: wheat;
-    background-color: rgba(255, 68, 0, 0.253);
-    padding: 0.3rem;
-    border-radius: 10px;
+.navLink {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: wheat;
+  background-color: rgba(255, 68, 0, 0.253);
+  padding: 0.3rem;
+  border-radius: 10px;
 }
-.navLink:hover i{
-    color: orangered;
+.navLink:hover i {
+  color: orangered;
+  transition: 2s all;
 }
-.linkActive{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 1.3rem;
-    text-decoration: none;
-    background-color: inherit;
-    color: orangered;
-
+.linkActive {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: inherit;
+  color: orangered;
+}
+.linkActive:hover i {
+  color: wheat;
+  transition: 2s all;
 }
