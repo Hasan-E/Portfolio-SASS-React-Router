@@ -1,0 +1,44 @@
+.aboutContainer {
+  margin-top: 15rem;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  font-size: 19px;
+  .aboutTitle {
+    color: orangered;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  .experience {
+    margin-top: 7rem;
+    width: 100vw;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 10rem;
+
+    .xpCard {
+      background-color: rgb(50, 50, 50);
+      width: 70%;
+      border-bottom: 5px solid orangered;
+      text-align: start;
+      padding: 2rem 1rem;
+    }
+    .years{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    .place{
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+    }
+    .job{
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+  }
+}
