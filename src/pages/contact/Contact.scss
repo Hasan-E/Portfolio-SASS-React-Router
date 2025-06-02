@@ -1,0 +1,35 @@
+.contactContainer {
+  text-align: center;
+  color: white;
+  margin-top: 15rem;
+  .contactTitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  .contactItems {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .itemName {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        gap: 0.5rem;
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5rem;
+        }
+      }
+      .itemPath {
+        color: orangered;
+      }
+    }
+  }
+}
