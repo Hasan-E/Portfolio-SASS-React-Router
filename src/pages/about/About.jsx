@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="aboutContainer">
       <h1 className="aboutTitle">BIO</h1>
-      <p>
+      <p className="aboutText">
         Wednesday Addams is a fictional character from the Addams Family
         multimedia franchise created by American cartoonist Charles Addams. She
         is typically portrayed as a morbid and emotionally reserved child that

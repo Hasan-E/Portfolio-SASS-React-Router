@@ -1,6 +1,6 @@
 .navContainer {
   display: flex;
-  justify-self: end;
+  justify-content: end;
 }
 .navContainer ul {
   display: flex;
@@ -15,7 +15,6 @@
   text-decoration: none;
   color: white;
   padding: 0.3rem;
-  border-radius: 10px;
 }
 .navLink:hover i {
   color: orangered;
@@ -32,4 +31,15 @@
 .linkActive:hover i {
   color: wheat;
   transition: 1s all;
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    justify-content: center;
+  }
+  .navContainer ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
 }
